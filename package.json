@@ -1,11 +1,8 @@
 {
   "name": "@asun01/db-async",
-  "version": "0.0.2",
+  "version": "0.0.4",
   "description": "interface to the database module. sqlite3, mysql, postgresql, mongodb, redis and or.",
-  "main": "dist/index.js",
-  "files": [
-    "dist/"
-  ],
+  "main": "index.js",
   "exports": {
     "require": "./index.js",
     "import": "./index.mjs"
@@ -18,7 +15,7 @@
     "clean": "shx rm -rf dist && shx rm -rf lib && shx rm -rf docs/api",
     "build:dts": "npx tsc && npx api-extractor run --local --verbose",
     "build:doc": "npx api-documenter markdown --input temp --output docs/api",
-    "pub": "npm publish"
+    "pub": "cd dist && npm publish"
   },
   "repository": {
     "type": "git",
