@@ -1,6 +1,6 @@
 {
   "name": "@asun01/db-async",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "interface to the database module. sqlite3, mysql, postgresql, mongodb, redis and or.",
   "main": "index.js",
   "exports": {
