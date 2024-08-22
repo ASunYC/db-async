@@ -1,6 +1,6 @@
 {
   "name": "@asun01/db-async",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "interface to the database module. sqlite3, mysql, postgresql, mongodb, redis and or.",
   "main": "index.js",
   "exports": {
@@ -11,7 +11,7 @@
     "test": "jest",
     "watch": "jest --watchAll",
     "coverage": "jest --coverage",
-    "build": "npm run clean && npx rollup -c && npm run build:doc && shx cp package.json LICENSE README.md dist/",
+    "build": "npm run clean && npx rollup -c && npm run build:doc && shx cp LICENSE README.md dist/ && node ./scripts/publish.js",
     "clean": "shx rm -rf dist && shx rm -rf lib && shx rm -rf docs/api",
     "build:dts": "npx tsc && npx api-extractor run --local --verbose",
     "build:doc": "npx api-documenter markdown --input temp --output docs/api",
