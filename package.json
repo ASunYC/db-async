@@ -1,6 +1,6 @@
 {
   "name": "@asun01/db-async",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "description": "interface to the database module. sqlite3, mysql, postgresql, mongodb, redis and or.",
   "main": "index.js",
   "exports": {
@@ -17,10 +17,6 @@
     "build:doc": "npx api-documenter markdown --input temp --output docs/api",
     "pub": "cd dist && npm publish"
   },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/ASunYC/db-async.git"
-  },
   "keywords": [
     "asun01",
     "sqlite3",
@@ -29,9 +25,14 @@
   "author": "asun01",
   "license": "Apache-2.0",
   "typings": "index.d.ts",
+  "homepage": "https://github.com/ASunYC",
   "publishConfig": {
     "access": "public",
     "registry": "https://registry.npmjs.org/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ASunYC/db-async.git"
   },
   "dependencies": {
     "@asun01/db-async": "file:",
